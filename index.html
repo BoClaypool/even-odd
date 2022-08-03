@@ -10,22 +10,22 @@
 <body>
     <h1>Even Odd Lists</h1>
     <hr/> 
-    <form id="even-odd-form" autocomplete="off" target="_blank">
+    <form id="even-odd-form" autocomplete="off" target="_blank" onsubmit="return false">
       <div> 
         <label for="word">word</label> 
         <input type="text" name="word" id="word" placeholder="what's your word?" onkeyup="updateWord(this)"> 
       </div>
       <div>
-        <input type="button" value="Even or Odd?" onclick="">
+        <input type="button" value="Even or Odd?" id="button" onclick="handleSubmit(this)">
       </div>
     </form>
     <section>
         <h2>Even</h2>
-        <ul></ul>
+        <ul id="even"></ul>
       </section>
       <section>
         <h2>Odd</h2>
-        <ul></ul>
+        <ul id="odd"></ul>
       </section>
 </body>
 <script src="/index.js"></script>
